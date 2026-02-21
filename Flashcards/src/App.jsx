@@ -35,7 +35,7 @@ const cardSet = {
 
 function Flashcard({ card, isFlipped, feedback, onFlip }) {
   return (
-    <div className={'card ${feedback}'} onClick={onFlip}>
+    <div className={`card ${feedback}`} onClick={onFlip}>
         <h2>Flashcard</h2>
         <p>{isFlipped ? card.answer : card.question}</p>
         <small>Click to flip</small>
