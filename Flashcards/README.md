@@ -46,8 +46,6 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Flashcards App Demo](https://imgur.com/qVA9zYH.gif)
-
 <img src='https://imgur.com/qVA9zYH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
