@@ -1,6 +1,7 @@
 # Web Development Project 3 - *Flashcars! Part 2*
 
 Submitted by: **Joseph Landers**
+ZNumber: Z23455968
 
 This web app: **flashcard like format that users can use to study. **
 
@@ -45,7 +46,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/HGYJkWc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -60,7 +61,7 @@ GIF created with ...
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2026] [Joseph Landers]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
