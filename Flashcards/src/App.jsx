@@ -93,34 +93,74 @@ export default function App() {
     setIsFlipped(true);
   }
 
-  const nextRandomCard = () => {
-    let newIndex = index;
-    while (newIndex === index) {
-      newIndex = Math.floor(Math.random() * totalCards);
+  function goNext() {
+    if (index < totalCards - 1) {
+      setIndex(index + 1);
+      resetCard();
     }
-    setIndex(newIndex);
+  }
+
+  function goBack() {
+    if (index > 0) {
+      setIndex(index - 1);
+      resetCard();
+    }
+  }
+
+  function shuffleCards() {
+    const shuffled = [...cards].sort(() => Math.random() - 0.5);
+    setCards(shuffled);
+    setIndex(0);
+    resetCard();
+  }
+
+  function markMastered() {
+    const updated = cards.filter((_, i) => i !== index);
+    setMastered([...mastered, currentCard]);
+    setCards(updated);
+    setIndex(0);
+    resetCard();
+  }
+
+  function resetCard() {
     setIsFlipped(false);
-  };
+    setGuess('');
+    setFeedback('null');
+  }
 
   return (
     <div className="app">
-      <div className="section-title">
-        <h1>{cardSet.title}</h1>
-        <p>{cardSet.description}</p>
-        <p>Total Cards: {totalCards}</p>
-      </div>
-
-      <div className="section-card">
-        <Flashcard
-          card={cardSet.cards[index]}
-          isFlipped={isFlipped}
-          onFlip={handleFlip}
+      <h1>{cardSet.title}</h1>
+      <p>{cardSet.description}</p>
+      <p>Total Cards: {totalCards}</p>
+      
+      <Flashcard
+        card={cardSet.cards[index]}
+        isFlipped={isFlipped}
+        onFlip={handleFlip}
+        feedback={feedback}
         />
-      </div>
 
-      <div className="section-control">
-        <button onClick={nextRandomCard}>Next Random Card</button>
+        <div>
+          <input
+            type="text"
+            value={guess}
+            onChange={e => setGuess(e.target.value)}
+            placeholder="Type your answer here..."
+          />
+          <button onClick={handleSubmit}>Submit</button>
+        </div>
+
+        <div>
+          <button onClick={goBack} disabled={index === 0}>Back</button>
+          <button onClick={goNext} disabled={index === totalCards - 1}>Next</button>
+        </div>
+
+        <div>
+          <button onClick={shuffleCards}>Shuffle</button>
+          <button onClick={markMastered}>Mark as Mastered</button>
+        </div>
       </div>
-    </div>
   );
 }
+  
