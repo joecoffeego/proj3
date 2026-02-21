@@ -53,7 +53,7 @@ GIF created with ezgif.com
 
 ## Notes
 
-.
+i was able to build on my skills and understanding of useState() with regards to a single application. im able to understand and validate user input, provide dynamic visual feedback and manage conditional rendering. in this project i was able to improve my ability to improve structure components clearly and build more interactive user driven interface.
 
 ## License
 
