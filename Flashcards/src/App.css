@@ -66,6 +66,21 @@ body {
   justify-content: center;
 }
 
+.correct {
+  background-color: #d4f7d4;
+  border-color: green;
+}
+
+.incorrect {
+  background-color: #f7d4d4;
+  border-color: red;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
