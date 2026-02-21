@@ -46,10 +46,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![Flashcard Demo](FlashCoffee.gif)
+
 <img src='https://imgur.com/qVA9zYH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with imgur
+GIF created with ezgif.com
 
 ## Notes
 
