@@ -1,0 +1,131 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6b4423 0%, #3e2723 100%);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 40px;
+}
+
+.card {
+  background: #f5f1ed;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 320px;
+  min-height: 200px;
+  margin: 20px auto;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #d7ccc8;
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.card:active {
+  transform: translateY(-2px);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  opacity: 0.15;
+}
+
+.section-controls {
+  margin: 30px 0;
+}
+
+.section-controls button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: #ff6f00;
+  color: white;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.3);
+  font-weight: 600;
+}
+
+.section-controls button:hover {
+  background: #e65100;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 111, 0, 0.4);
+}
+
+.section-controls button:active {
+  transform: translateY(0);
+}
+
+h1 {
+  color: #f5f1ed;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  color: #d7ccc8;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  color: #3e2723;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
