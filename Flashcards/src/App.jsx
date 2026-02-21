@@ -8,17 +8,17 @@ const cardSet = {
     {
       id: 1,
       question: "What is espresso?",
-      answer: "A concentrated coffee brewed by forcing hot water through finely-ground coffee."
+      answer: "A concentrated coffee brewed by forcing hot water through finely ground coffee."
     },
     {
       id: 2,
       question: "What are the different coffee brewing methods?",
-      answer: "Common methods include drip brewing, French press, espresso, and pour-over."
+      answer: "Drip, French press, espresso, and pour-over."
     },
     {
       id: 3,
       question: "What is a coffee blend?",
-      answer: "A coffee blend is a mix of beans from different origins, roasted together to create a unique flavor profile."
+      answer: "A mix of beans, roasted together."
     },
     {
       id: 4,
@@ -28,7 +28,7 @@ const cardSet = {
     {
       id: 5,
       question: "What is the ideal water temperature for brewing coffee?",
-      answer: "The ideal water temperature for brewing coffee is between 195°F and 205°F (90°C to 96°C)."
+      answer: "Between 195 F and 205 F."
     }
   ],
 };
